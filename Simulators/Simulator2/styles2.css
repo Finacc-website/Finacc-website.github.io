@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+ 
+header {
+    background-color: #fff;
+    padding: 10px;
+    border-bottom: 2px solid #02740c;
+}
+ 
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ 
+.header-container img {
+    width: 175px;
+    height: 75px;
+    margin-right: 20px;
+}
+ 
+header h1, header h2 { 
+    color: #067502;
+    width: 195px;
+    font-size: 20px;
+    text-align: center;
+    
+}
+ 
+header p {
+    color: #666;
+    margin-top: 5px;
+    
+}
+ 
+.aviso {
+    background-color: #e6f2ff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+    border-top: 1px solid #064d00;
+    border-bottom: 1px solid #096800;
+}
+ 
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+ 
+.login-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 35%;
+}
+ 
+.login-container h3 {
+    color: #009e00;
+    margin-bottom: 10px;
+}
+ 
+form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+}
+ 
+form input {
+    width: 30%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    justify-content: first baseline;
+}
+ 
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+ 
+.buttons button {
+    padding: 10px 20px;
+    background-color: #029102;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+ 
+.buttons button[type="reset"] {
+    background-color: #079c07;
+}
+ 
+aside {
+    width: 35%;
+}
+ 
+aside h4 {
+    margin-bottom: 10px;
+    color: #0056b3;
+}
+ 
+aside ul {
+    list-style-type: none;
+}
+ 
+aside ul li {
+    margin-bottom: 10px;
+}
+ 
+aside ul li a {
+    color: #0056b3;
+    text-decoration: none;
+}
+ 
+aside ul li a:hover {
+    text-decoration: underline;
+}

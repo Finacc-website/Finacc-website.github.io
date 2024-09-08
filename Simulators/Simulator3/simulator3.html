@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simulador de Declaración de Renta</title>
+<link rel="stylesheet" href="styles3.css">
+</head>
+<body>
+<div class="container">
+<h2>Ingresos</h2>
+<table class="table">
+<thead>
+<tr>
+<th>NIT</th>
+<th>Agente</th>
+<th>Total Ingresos</th>
+<th>Retención</th>
+<th>Base Retenida</th>
+<th>Saldo a Pagar</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0000-000000-000-0</td>
+<td>Agente 1</td>
+<td><input type="number" id="ingreso1" value="10000" oninput="calcularTotal()"></td>
+<td>$200.00</td>
+<td id="retenida1">$9,800.00</td>
+<td>$0.00</td>
+</tr>
+<tr>
+<td>0000-000000-000-0</td>
+<td>Agente 2</td>
+<td><input type="number" id="ingreso2" value="5000" oninput="calcularTotal()"></td>
+<td>$100.00</td>
+<td id="retenida2">$4,900.00</td>
+<td>$0.00</td>
+</tr>
+</tbody>
+</table>
+<div class="note">
+<p>
+                Por favor leer las siguientes indicaciones: <br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla purus eu feugiat varius. Nulla eget ligula sapien. Integer eget varius elit, nec bibendum orci.
+</p>
+</div>
+ 
+        <h2>Deducciones</h2>
+<table class="table">
+<thead>
+<tr>
+<th>Concepto</th>
+<th>Valor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Gastos por Salud</td>
+<td><input type="number" id="deduccion1" value="500" oninput="calcularTotal()"></td>
+</tr>
+<tr>
+<td>Gastos por Educación</td>
+<td><input type="number" id="deduccion2" value="1000" oninput="calcularTotal()"></td>
+</tr>
+</tbody>
+</table>
+<h2>Total a Declarar</h2>
+<p id="totalDeclarar">$0.00</p>
+</div>
+ 
+    <script src="main.js"></script>
+</body>
+</html>
