@@ -14,19 +14,19 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 18px;
-    background-color: #f0f0f0; /* Verde */
+    padding: 10px;
+    background-color: #ffffff; /* Verde */
 }
  
 header .logo img {
-    height: 75px; /* disminui el tamaño */
+    height: 70px; /* disminui el tamaño */
     
 }
  
 nav ul {
     list-style-type: none;
     display: flex;
-    gap: 20px;
+    gap: 25px;
 }
  
 nav ul li {
@@ -46,7 +46,7 @@ nav ul li a:hover {
  
 .hero {
     position: relative;
-    background: url('grafica.jpg') no-repeat center center/cover;
+    background: url('image/pexels-weekendplayer-186464.jpg') no-repeat center center/cover;
     height: 85vh;
     display: flex;
     justify-content: flex-start;
@@ -91,6 +91,9 @@ nav ul li a:hover {
     border-radius: 5px;
     font-weight: bold;
     transition: background-color 0.3s;
+    
+
+    
 }
  
 .learn-more {
@@ -143,6 +146,7 @@ nav ul li a:hover {
     color: #347C22;
     text-decoration: none;
     font-weight: bold;
+    top: 30%;
     transition: color 0.3s;
 }
  
@@ -160,7 +164,7 @@ nav ul li a:hover {
     color: #000;
 }
  
-.welcome-text {
+.welcome-text { /* cambie el tamaño  */
     width: 60%;
 }
  
@@ -314,10 +318,10 @@ nav ul li a:hover {
     height: 100%;
 }
  
-/* Botones de navegación del carrusel */
+/* Botones de navegación del carrusel de la página inicial*/
 .carousel-btn {
     position: absolute;
-    top: 50%;
+    top: 60%;
     transform: translateY(-50%);
     background-color: #347C22;
     color: white;
