@@ -451,32 +451,7 @@ nav ul li a:hover {
     height: 100%;
 }
  
-/* Botones de navegación del carrusel de la página inicial*/
-.carousel-btn {
-    position: absolute;
-    top: 60%;
-    transform: translateY(-50%);
-    background-color: #347C22;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 1.5rem;
-    z-index: 10;
-    transition: background-color 0.3s;
-}
- 
-.prev-btn {
-    left: 10px;
-}
- 
-.next-btn {
-    right: 10px;
-}
- 
-.carousel-btn:hover {
-    background-color: #285617;
-}
+
  
 /* Estilos responsive */
 @media (max-width: 768px) {
