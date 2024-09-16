@@ -209,7 +209,7 @@ nav ul li a:hover {
 /* Estilos para "Our Services" */
 .our-services {
     background-color: #ffffff;
-    padding: 60px 0;
+    padding: 40px 0;
     text-align: center;
     color: #000;
 }
@@ -223,16 +223,17 @@ nav ul li a:hover {
 .our-services .service-card-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 4 columnas */
-    gap: 20px;
+    gap: 30px;
 }
  
 .our-services .service-card {
-    background-color: #f9f9f9;
-    padding: 20px;
+    background-color: #e9e7e7;
+    padding: 10px;
     border-radius: 10px;
     text-align: left;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
+    flex-wrap: wrap;
 }
  
 .our-services .service-card:hover {
@@ -259,7 +260,6 @@ nav ul li a:hover {
     font-size: medium;
     image-resolution: 150px;
     position: relative;
-    height: 100px;
     top: 5%;
     left: 25%;
    
@@ -269,6 +269,8 @@ nav ul li a:hover {
 /* Contenedor del carrusel */
 .carousel-container {
     position: relative;
+    top: 100%;
+    left: 30px;
     overflow: hidden;
     width: 100%;
 }
@@ -278,15 +280,138 @@ nav ul li a:hover {
     gap: 20px;
     transition: transform 0.5s ease-in-out;
 }
+
+/*Carrusel de los simuladores*/
+.our-simulators {
+    background-color: #ffffff;
+    padding: 40px 0;
+    text-align: center;
+    color: #000;
+}
+ 
+.our-simulators h2 {
+    color: #347C22;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.carousel1-container {
+    position: relative;
+    top: 100%;
+    left: 30px;
+    overflow: hidden;
+    width: 100%;
+}
+ 
+.carousel1 {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.service1-card {
+    background-color: #e9e7e7;
+    padding: 56px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    height: 255px;
+    flex: 0 0 auto;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+ 
+.service1-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+ 
+.service1-card h3 {
+    color: #187201;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+ 
+.service1-card p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+ 
+.service1-icon {
+    margin-bottom: 30px;
+    width: 90px;
+    top: 45px;
+
+}
+ 
+.service1-icon img {
+    width: 90%;
+    height: 100%;
+    top: 35%;
+    left: 24%;
+    margin-top: 5%;
+    margin-block: 5%;
+    image-resolution: 100;
+}
+ 
+.simulator-link {
+        text-decoration: none;
+        color: #036d25;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+
+
+/* Botones de navegación del carrusel de la página inicial*/
+.carousel1-btn {
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    background-color: #347C22;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    z-index: 10;
+    transition: background-color 0.3s;
+}
+ 
+.prev-btn {
+    left: 10px;
+}
+ 
+.next-btn {
+    right: 10px;
+}
+ 
+.carousel1-btn:hover {
+    background-color: #285617;
+}
+ 
+/* Estilos responsive */
+@media (max-width: 768px) {
+    .service1-card {
+        width: 150px;
+    }
+}
+ 
+@media (max-width: 480px) {
+    .service1-card {
+        width: 100px;
+    }
+}
  
 /* Estilo de las tarjetas */
 .service-card {
     background-color: #f9f9f9;
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 250px;
+    width: 225px;
     flex: 0 0 auto;
     transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -348,12 +473,13 @@ nav ul li a:hover {
 /* Estilos responsive */
 @media (max-width: 768px) {
     .service-card {
-        width: 200px;
+        width: 150px;
     }
 }
  
 @media (max-width: 480px) {
     .service-card {
-        width: 150px;
+        width: 100px;
     }
 }
+
