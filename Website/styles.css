@@ -301,12 +301,16 @@ nav ul li a:hover {
     left: 30px;
     overflow: hidden;
     width: 100%;
+    justify-content: space-around;
+    align-items: left;
+    display: -webkit-flex;
 }
  
 .carousel1 {
     display: flex;
     gap: 20px;
     transition: transform 0.5s ease-in-out;
+    
 }
 
 .service1-card {
@@ -314,12 +318,16 @@ nav ul li a:hover {
     padding: 56px;
     border-radius: 10px;
     font-size: 1.2rem;
-    text-align: left;
+    text-align:left;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 200px;
+    width: 225px;
     height: 255px;
-    flex: 0 0 auto;
+    margin: 0 0px;
     transition: transform 0.3s, box-shadow 0.3s;
+    top: 5%;
+    left: -8%;
+    position: relative;
+    
 }
  
 .service1-card:hover {
@@ -331,35 +339,35 @@ nav ul li a:hover {
     color: #187201;
     font-size: 1.2rem;
     margin-bottom: 10px;
+    
 }
  
 .service1-card p {
     font-size: 1rem;
     margin-bottom: 10px;
+    
 }
  
 .service1-icon {
-    margin-bottom: 30px;
-    width: 90px;
-    top: 45px;
-
+    display:block;
+    margin-left: 6%;
+    width: 100px;
+    height: 90px; /* Puedes ajustar la altura según lo necesites */
+    
 }
- 
+
 .service1-icon img {
-    width: 90%;
-    height: 100%;
-    top: 35%;
-    left: 24%;
-    margin-top: 5%;
-    margin-block: 5%;
-    image-resolution: 100;
+    width: 100%;
+    height: 100px; /* Mantén el aspecto de la imagen */
+    image-resolution: 100px;
+   
 }
  
 .simulator-link {
         text-decoration: none;
         color: #036d25;
         font-size: 18px;
-        font-weight: bold;
+        font-weight:bolder;
     }
 
 
@@ -409,7 +417,7 @@ nav ul li a:hover {
     background-color: #f9f9f9;
     padding: 10px;
     border-radius: 10px;
-    text-align: center;
+    text-align: left;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 225px;
     flex: 0 0 auto;
