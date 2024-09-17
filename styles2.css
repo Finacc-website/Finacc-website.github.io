@@ -103,6 +103,14 @@ form input {
     background-color: #079c07;
 }
  
+
+.simulator-link {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight:bolder;
+}
+
 aside {
     width: 35%;
 }

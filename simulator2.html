@@ -1,82 +1,71 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Declarations online</title>
-<link rel="stylesheet" href="styles2.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Declarations online</title>
+    <link rel="stylesheet" href="styles2.css">
 </head>
 <body>
 <header>
-<div class="header-container">
-<img src="image/imagen__11_-removebg-preview.png" alt="Logo Ministerio de Hacienda">
-<div>
-<h1>Income-tax return Simulator</h1>
-<h2></h2>
-<p></p>
-</div>
-</div>
+    <div class="header-container">
+        <img src="image/imagen__11_-removebg-preview.png" alt="Logo Ministerio de Hacienda">
+        <div>
+            <h1>Income-tax return Simulator</h1>
+        </div>
+    </div>
 </header>
 
 <section class="aviso">
-    <p><strong>Use this simulator to practice your income-tax return:</strong> </p>
-    </section>
- 
-    <main>
-<div class="login-container">
-<h3>Welcome</h3>
-<p>Write your NIT/DUI and password for sign in to system.</p>
-<form action="#">
-    <label></label>
-    <label></label>
-    <label></label>
-<label for="nitdui">NIT/DUI</label>
-<input type="text" id="nitdui" placeholder="22222222-2">
-<label></label>
-<label for="password">Password</label>
-<input type="password" id="password" placeholder="***">
-<label></label>
-<div class="buttons">
-    <label></label>
+    <p><strong>Use this simulator to practice your income-tax return:</strong></p>
+</section>
+
+<main>
+    <div class="login-container">
+        <h3>Welcome</h3>
+        <p>Write your NIT/DUI and password to sign in to system.</p>
+        
     
-    
-<button type="reset">Clean</button>
-<label></label>
-<label></label>
-<label></label>
-<label></label>
-<label></label>
-<label></label>
+        <form id="simulatorForm">
+            <label for="nitdui">NIT/DUI</label>
+            <input type="text" id="nitdui" placeholder="22222222-2" required>
 
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="***" required>
 
-<button class="Btn-submit" type="submit">Enter</button>
+            <div class="buttons">
+                <button type="reset">Clean</button>
+                <button class="buttons" type="submit">Enter</button>
+            </div>
+        </form>
+    </div>
 
-<label></label>
-<label></label>
-
-
-
-
-</div>
-</form>
-</div>
- 
-        <aside>
-<h4>Step-by-Step</h4>
-<ul>
-<li><a href="#">Recover Password</a></li>
-<li><a href="#">Sign Up Online</a></li>
-<li><a href="#">Change Email Online</a></li>
-<li><a href="#">VAT Declaration</a></li>
-<li><a href="#">Account Payment Declaration</a></li>
-<li><a href="#">Income Tax Declaration</a></li>
-<li><a href="#">Real Estate Transfer</a></li>
-<li><a href="#">Capital Gains and/or Losses Report</a></li>
-</ul>
-</aside>
+    <aside>
+        <h4>Step-by-Step</h4>
+        <ul>
+            <li><a href="#">Recover Password</a></li>
+            <li><a href="#">Sign Up Online</a></li>
+            <li><a href="#">Change Email Online</a></li>
+            <li><a href="#">VAT Declaration</a></li>
+            <li><a href="#">Account Payment Declaration</a></li>
+            <li><a href="#">Income Tax Declaration</a></li>
+            <li><a href="#">Real Estate Transfer</a></li>
+            <li><a href="#">Capital Gains and/or Losses Report</a></li>
+        </ul>
+    </aside>
 </main>
 
-<script src="Main.js" > </script>
+<!-- Aquí el script para capturar el evento "submit" del formulario -->
+<script>
+    document.getElementById('simulatorForm').addEventListener('submit', function(e) {
+        e.preventDefault(); // Evita que el formulario se envíe de forma predeterminada
+
+        // Redirige a la página de login
+        window.location.href = "loginSimulator.html";
+    });
+</script>
+
+<script src="Main.js"></script>
 
 </body>
 </html>
