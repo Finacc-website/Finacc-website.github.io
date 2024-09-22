@@ -465,3 +465,135 @@ nav ul li a:hover {
         width: 100px;
     }
 }
+
+
+
+.our-contacts {
+    background-color: #ffffff;
+    padding: 40px 0;
+    text-align: center;
+    color: #000;
+}
+ 
+.our-contacts h2 {
+    color: #347C22;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.carousel2-container {
+    position: relative;
+    top: 100%;
+    left: 30px;
+    overflow: hidden;
+    width: 100%;
+    justify-content: space-around;
+    align-items: left;
+    display: -webkit-flex;
+}
+ 
+.carousel2 {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.5s ease-in-out;
+    
+}
+
+.service2-card {
+    background-color: #e9e7e7;
+    padding: 76px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    text-align:left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    height: 255px;
+    margin: 0 0px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    top: 5%;
+    left: -21%;
+    position: relative;
+    
+}
+ 
+.service2-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+ 
+.service2-card h3 {
+    color: #187201;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    
+}
+ 
+.service2-card p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    
+}
+ 
+.service2-icon {
+    display:block;
+    margin-left: 6%;
+    width: 100px;
+    height: 90px; /* Puedes ajustar la altura según lo necesites */
+    
+}
+
+.service2-icon img {
+    width: 100%;
+    height: 100px; /* Mantén el aspecto de la imagen */
+    image-resolution: 100px;
+   
+}
+ 
+.simulator-link {
+        text-decoration: none;
+        color: #036d25;
+        font-size: 18px;
+        font-weight:bolder;
+    }
+
+
+
+/* Botones de navegación del carrusel de la página inicial*/
+.carousel1-btn {
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    background-color: #347C22;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    z-index: 10;
+    transition: background-color 0.3s;
+}
+ 
+.prev-btn {
+    left: 10px;
+}
+ 
+.next-btn {
+    right: 10px;
+}
+ 
+.carousel1-btn:hover {
+    background-color: #285617;
+}
+ 
+/* Estilos responsive */
+@media (max-width: 768px) {
+    .service1-card {
+        width: 150px;
+    }
+}
+ 
+@media (max-width: 480px) {
+    .service1-card {
+        width: 100px;
+    }
+}
